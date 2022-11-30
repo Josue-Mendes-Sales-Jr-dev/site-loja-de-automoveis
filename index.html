@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site with bootstrap</title>
+    
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--link do css-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
+    <!--jQuery--> 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+    <!--pooper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <!-- js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/30c31e337d.js" crossorigin="anonymous"></script>
+    <!--parallax.js-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!--progress bar-->
+    <script src="./js/progress.min.js"></script>
+    
+
+</head>
+<body>
+<header>
+    <div class="container " id="nav-container">
+
+       <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+          
+         <div class="container-fluid">
+            <a href="#" class="navbar-brand" >
+              <img src="./img/logo-sem-fundo.png" alt="C3Cars" id="logo"> C3-Cars
+            </a>
+            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toglle navigation">
+            <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#" id="home-menu">Home</a></li>
+              <li class="nav-item"><a class=" nav-link" href="#about-area" id="about-manu">Sobre</a></li>
+              <li class="nav-item"><a class=" nav-link" href="#services-area" id="services-menu">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team-area" id="team-menu">Time</a></li>
+              <li class="nav-item"><a class=" nav-link" href="#my-portifolio-area" id="portifolio-menu">Portifolio</a></li>
+              <li class="nav-item"><a class=" nav-link" href="#contact-area" id="contact-menu">Contatos</a></li>
+            </ul>
+                    
+                    </div>
+          </div>
+       
+      </nav>
+    </div>
+</header>
+
+
+<main>
+  
+  <div id="mainSlider" class="carousel slide" data-bs-ride="false">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./img/carro01.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Buscando um carro?</h2>
+          <p>Fale conosco, temos vários em nosso portifolio.</p>
+          <a href="./routers/product.html" class="btn">Saiba mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carro02.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 >Escolha seu carro.</h2>
+          <p>Fale com um de nossos atendentes.</p>
+          <a href="./routers/product.html" class="btn">Saiba mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carro03.jpg" class="d-block w-100 img-fluid" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Qual carro você deseja?</h2>
+          <p>Temos os melhores carros.</p>
+           <a href="./routers/product.html" class="btn">Saiba mais</a>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--about-->
+    <div id="about-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center pt-5">
+            <h3 class="title pb-4 ">Sobre a C3-Cars</h3>
+          </div>
+          <div class="col-md-6">
+            <img class="w- h-100 img-fluid " src="img/carro03.jpg" alt="Modelo novo">
+          </div>
+          <div class="col-md-6">
+          <h3 class="about-title pb-2 pt-3 px-3">Um empresa que pensa no futuro</h3>
+          <p>Carros com muita tecnologia, potência e muita velocidade para você aproveitar o melhor do auto mobilismo.</p>
+          <p>Assistência garantida por mais der 24 meses em nossas lojas autorizadas</p>
+           <p>Veja outras novidades:</p>
+            <ul >
+              <li><i class="fas fa-check"></i> Motores com tecnologia turbo-CH3</li>
+              <li><i class="fas fa-check"></i> Reparação da pintura durante 365 dias, no ano da compra</li>
+              <li><i class="fas fa-check"></i> Troca de óleo por 6 meses</li>
+              <li><i class="fas fa-check"></i> Motor eletrico de 4 horas de autonômia</li>
+              <li><i class="fas fa-check"></i> projeção olográfica no painel do veículo </li>
+              
+            </ul>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="services-area" >
+      <div class="container">
+        <div class="row">
+          <div class="column col-12" >
+            <h3 class="services-title text-center pt-5 pb-5 ">Nossas especialidades</h3>
+          </div>
+          <div class="column col-4 red">
+            <i class="fas fa-mobile-alt"></i>
+            <h4 class="text-center">Aplicativos Nativos</h4>
+            <p>Adipisicing elit. impedit quis  
+              , incidunt facere, ratione tempore 
+              vitae quia?</p>
+          </div>
+
+          <div class="column col-4 red">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4 class="text-center">Peças importadas</h4>
+            <p>Adipisicing elit. impedit quis  
+              , incidunt facere, ratione tempore 
+              vitae quia?</p>
+
+          </div>
+          <div class="column col-4 red">
+            <i class="fa-solid fa-pen "></i>
+            <h4 class="text-center red">Desinger do Veículo</h4>
+            <p>Adipisicing elit. impedit quis  
+              , incidunt facere, ratione tempore 
+              vitae quia?</p>
+
+          </div>
+          
+          <div class="column col-4 red">
+            <i class="fa-solid fa-gear "></i>
+            <h4 class="text-center ">Manutenção autorizada</h4>
+            <p>Adipisicing elit. impedit quis  
+              , incidunt facere, ratione tempore 
+              vitae quia?</p>
+
+          </div>
+          <div class="column col-4 red">
+            <i class="fa-solid fa-paint-roller "></i>
+            <h4 class="text-center ">Pintura autorizada</h4>
+            <p>Adipisicing elit. impedit quis  
+              , incidunt facere, ratione tempore 
+              vitae quia?</p>
+
+          </div>
+          <div class="column col-4 red">
+            <i class="fa-solid fa-phone"></i>
+            <h4 class="text-center">Suporte</h4>
+            <p>Adipisicing elit. impedit quis  
+              , incidunt facere, ratione tempore 
+              vitae quia?</p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--data-->
+
+    <div id="data-area">
+      <div class="container">
+        <div class="row" >
+
+          <div class="col-md-3 circle-box">
+            <div id="circleA"></div>
+            <p>Projetos realizados</p>
+          </div>
+
+          <div class="col-md-3 circle-box">
+            <div id="circleB"></div>
+            <p>Cliente satisfeitos</p>
+          </div>
+
+          <div class="col-md-3 circle-box">
+            <div id="circleC"></div>
+            <p>Colaboradores</p>
+          </div>
+
+          <div class="col-md-3 circle-box">
+            <div id="circleD"></div>
+            <p>cafézinho</p>
+          </div>
+        
+
+        </div>
+
+      </div>
+
+    <!--team-->
+
+    </div>
+    <div id="team-area" >
+      <div class="container cards">
+        <div class="row line">
+          
+          <h3 class="col-12 text-center pt-4 pb-4">Nosso time</h3>
+          
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./img/profile1.jpg" class="card-img" alt="joão">
+              <div class="card-body">
+                <h5 class="card-title text-center">João Melo</h5>
+                <p class="card-text text-center">Software</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./img/profile2.jpg" class="card-img" alt="joão">
+              <div class="card-body">
+                <h5 class="card-title text-center">Bruna Lins</h5>
+                <p class="card-text text-center">Software</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./img/profile3.jpg" class="card-img" alt="joão">
+              <div class="card-body">
+                <h5 class="card-title text-center">Rual caio</h5>
+                <p class="card-text text-center">Software</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./img/profile4.jpg" class="card-img" alt="joão">
+              <div class="card-body">
+                <h5 class="card-title text-center">Ana Maria</h5>
+                <p class="card-text text-center">Designer</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>      
+    </div>
+
+    <!--empresa-->
+
+    <div id="company-area" >
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-md-6" >
+            <img src="./img/empresa.jpg" class="img-fuid" style="width:100%", height="auto"" alt="">
+          </div>
+          
+          
+          <div class="empresa-text col-md-6 mt-5 text-center d-flex" id="pattern-img">
+            <h5 class="text-dark">GOSTA DE DESAFIOS?</h5>
+            <P class="text-dark">Temos vários posições abertas, entre elas: diretor de marketing, gestor de tráfego, vendedor</P>
+            <p class="text-dark">Clique no botão para conferir os benefícios e as posições em aberto</p>
+             <p class="text-dark">Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados</p>
+            <a href="#" class="btn">Saiba mais</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+
+    <!--Portifolio-->
+
+    <div id="my-portifolio-area">
+      <div class="container">
+
+        <div class="row">
+          <h3 class="text-center title-my-portifolio col-12">
+            Conheça nossos projetos
+          </h3>
+          <div class="col-md-12 text-center" id="filter-btn-box">
+            <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+            <button class="main-btn filter-btn" id="dsg-btn">Desinger</button>
+            <button class="main-btn filter-btn" id="seo-btn">SEO</button>
+            <button class="main-btn filter-btn" id="dev-btn">Montagem</button>
+          </div>
+          
+          <div class="col-4 projeto-box dev">
+            <img src="img/proj1.jpg " class="img-fluid" alt="project-1">
+          </div>
+          
+          <div class="col-4 projeto-box dev">
+            <img src="img/proj2.jpg" class="img-fluid"  alt="project-2">
+          </div>
+          
+          <div class="col-4 projeto-box seo">
+            <img src="img/proj3.jpg" class="img-fluid"  alt="project-3">
+          </div>
+          
+          <div class="col-4 projeto-box dsg">
+            <img src="img/proj4.jpg" class="img-fluid"  alt="project-4">
+          </div>
+          
+          <div class="col-4 projeto-box dev">
+            <img src="img/proj5.jpg" class="img-fluid"  alt="project-5">
+          </div>
+          
+          <div class="col-4 projeto-box dsg">
+            <img src="img/proj6.jpg" class="img-fluid"  alt="project-6">
+          </div>
+        </div>
+        
+
+      </div>
+
+    </div>
+    <!--contact-area-->
+    <div id="orcar-area">
+      <div class="container">
+        <div class="row">
+          <h3 class="col-12 text-center mb-2">
+            Fique por dentro das novidades
+          </h3>
+          <p class="col-12 mt-4 mb-4 text-center">
+            Assine nossa lista de e-mails, e receba nossos conteúdos sobre automóveis.
+          </p>
+        
+        <form action="#" class="mb-5">
+          <input type="text" class="ct-input" placeholder="seu melhor e-mail">
+           <input type="button" class="ct-input-btn" value="inscrever">
+        </form>
+
+      </div>
+      
+    </div>
+
+      <div id="new-orcar">
+       <div class="container-fluid">
+        <h4 >Deseja fazer um orçamento sem compromisso</h4>
+        <button type="button">Orçar</button>
+       </div>
+
+      </div>
+    
+</main>
+
+
+<footer>
+  <!--contact-area-->
+    <div id="contact-area">
+      <div class="footer container" >
+        <div class="row mb-4">
+          <div class="col-12">
+         <h3 class="text-center mb-5">Entre em contato conosco</h3>
+          </div>
+          <div class="cl col-md-4">
+            <i class=", fa-solid fa-phone"></i>
+           <p><span>Lique para: </span> (81) 98764-7466</p>
+          <p><span>Horários: </span> 8:00 às 18:00 de segunda à sábado</p>
+          </div>
+          <div class="cl col-md-4">
+            <i class=" fa-solid fa-envelope"></i>
+           <p><span>Envie um email: </span> autocarsC3@gmail.com</p>
+          </div>
+          <div class="cl col-md-4">
+            <i class="fa-solid fa-location-dot"></i>
+            <p><span>Venha tomar um chá: </span> Rua São josé dos Milagres</p>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row mt-4">
+          <div class="col-6">
+           <h4>Ou nos deixe uma mensagem</h4>
+          </div>
+          <div class="col-6">
+            <form class="" action="#">
+              <input type="email" class="form-control" placeholder="E-mail" name="email" id="email">
+              <input type="text" class="form-control" placeholder="Assunto">
+              <input type="text" class="form-control" placeholder="Sua mensagen...">
+              <input type="button" class="form-control" value="ENVIAR">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+  <!--script-->
+    <script src="./js/script.js"></script>
+
+</html>
