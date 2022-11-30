@@ -86,3 +86,73 @@ header, .navbar{
     text-transform: uppercase;
     
 }
+
+/*orcar-area*/
+
+#orcar-area form{
+    display: flex;
+    justify-content: center;
+   
+ }
+ 
+ .ct-input{
+     display: inline;
+     box-sizing: border-box;
+     border-color:#c51414 ;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+     width: 20rem;
+     padding: 2px 10px;
+     margin-top: 2rem;
+ }
+ 
+ .ct-input-btn{
+    display: inline;
+    margin-left: -1px;
+    margin-top: 2rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 7px;
+    width: 8rem;
+    background-color: #c51414;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    
+ }
+ 
+ .ct-input-btn:hover{
+     background-color: white;
+     color: #c51414;
+     border: 2px solid;
+     border-color: #c51414;
+ }
+ 
+ #new-orcar div{
+     background-color: #c51414;
+     width: 100vw;
+     height: 20vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ #new-orcar div h4{
+     color: white;
+ }
+ 
+ #new-orcar div button{
+     width: 8rem;
+     height: 4rem;
+     border-radius: 5rem;
+     margin-left: 40px;
+     text-transform: uppercase;
+     border: none;
+     color: #c51414;
+ }
+ 
+ #new-orcar div button:hover{
+     background-color: transparent;
+     border: 2px solid white;
+     color: white;
+ }
